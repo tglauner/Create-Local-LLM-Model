@@ -1,0 +1,77 @@
+\documentclass{beamer}
+
+% Theme settings
+\usetheme{default}
+\usecolortheme{default}
+
+% Title slide content
+\title{Build your own LLM model for privacy}
+\author{Tim Glauner}
+\date{\today}
+
+\begin{document}
+
+% Title slide
+\frame{\titlepage}
+
+% Content slides
+\begin{frame}
+	\frametitle{Introduction}
+	\begin{itemize}  
+		\item There is much discussion about privacy of data when you integrate with GPT-4 directly
+		\item So, we want to explore how easy and cost effective it is to build our own cloud based LLM where all data stays local to the developer
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Project Overview and Steps to Execute}
+  \begin{itemize}
+    \item Identify pre-trained LLM
+    \item Identify and utilize cost effective cloud environment like DigitalOcean with large storage and powerful graphics card
+    \item Train model on large pdf files and validate power of local model
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Current Status and Areas to Explore}
+  \begin{enumerate}
+    \item DigitalOcean seems not to have GPU infrastructure
+    \item What should be the architecture?
+	\begin{enumerate}
+		\item Programming Language: Python
+		\item User interface: Jupyter
+		\item Repository: Github
+		\item Instructions: https://thomascherickal.medium.com/how-to-create-your-own-llm-model-2598615a039a
+		\item Cloud: 
+		\begin{enumerate}
+			\item General: www.digitalocean.com
+			\item GPU: www.runpod.io/about/gpu-cloud
+		\end{enumerate}
+	\end{enumerate}
+    \item Can we use https://www.runpod.io/about/gpu-cloud?
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Next steps}
+  	\begin{enumerate}
+    		\item Review and confirm architecture and tools
+		\item Find cloud provider that provides cost effective resources especially large storage space (1TB) and GPU cards
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Work on June 8, 2023 - 1 hour
+  	\begin{enumerate}
+    		\item Explore capabilitites of gpt4all.io to install local LLM and have it work on local documents with complete privacy
+		\item GPT4ALL Falcon - 8 billion parameters, type = Falcon
+		\item Good video that shows the model with langchain: https://youtu.be/k_aURLKTrvU
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Conclusion}
+  	Thank you for your attention!
+\end{frame}
+
+\end{document}
